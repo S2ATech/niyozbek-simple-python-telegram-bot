@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-from telegram.ext import Updater, MessageHandler, Filters, CommandHandler
-
+from flask import Flask, render_template, request
 import os
 
 import telegram
