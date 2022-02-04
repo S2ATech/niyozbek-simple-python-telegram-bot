@@ -1,20 +1,12 @@
-#webhook heroku - this tutorial works on cloud. 
-#   to run flask on local server
-#       export FLASK_APP=tutorial6
-#       flask run
-#https://github.com/python-telegram-bot/python-telegram-bot/wiki/Where-to-host-Telegram-Bots#vps
-#https://github.com/python-telegram-bot/python-telegram-bot/wiki/Webhooks
-#https://python-telegram-bot.readthedocs.io/
-#https://seminar.io/2018/09/03/building-serverless-telegram-bot/
-#https://www.heroku.com/
-from flask import Flask, render_template, request
+
+
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update, InlineKeyboardMarkup
 
 from bson.json_util import dumps
 
 from multicolorcaptcha import CaptchaGenerator
 
-from jokes import getJoke
+
 
 from telegram.ext import (
 
