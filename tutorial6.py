@@ -28,14 +28,12 @@ from telegram.ext import (
 
 from telegram.utils import helpersimport telegram
 
-import pymongo
 
-import logging
 
 import os
 
-import pickle
-import os
+
+
 import telegram
 
 app = Flask(__name__)
