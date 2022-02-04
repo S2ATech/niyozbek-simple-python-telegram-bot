@@ -6,15 +6,6 @@ from telegram.ext import Updater, MessageHandler, Filters, CommandHandler
 
 import os
 
-import logging
-
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-
-                     level=logging.INFO)
-
-
-
-
 import telegram
 
 app = Flask(__name__)
