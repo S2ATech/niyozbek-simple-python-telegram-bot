@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 def webhook():
 
-    bot = telegram.Bot(token=os.environ["YOURAPIKEY"],use_context=True)
+    bot = telegram.Bot(token=os.environ["YOURAPIKEY"])
 
 
     if request.method == "POST":
@@ -27,7 +27,10 @@ def webhook():
         bot.sendMessage(chat_id=chat_id, text=f"{text} {first_name}")
 dispatcher = bot.dispatcher
 
+if text="Hi" :
+    bot.sendMessage(chat_id=chat_id, text=f"Hello {first_name} !")
 
+dispatcher = bot.dispatcher
 
   return 'ok'
 
