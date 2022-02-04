@@ -41,82 +41,13 @@ def webhook():
         bot.sendMessage(chat_id=chat_id, text=f"{text} {first_name}")
 dispatcher = bot.dispatcher
 
-#not needed
 
-
-
-def start(bot, context):
-
-    bot.sendMessage(chat_id=chat_id, text="I'm a bot, please talk to me!")
-
-start_handler = CommandHandler('start', start)
-
-dispatcher.add_handler(start_handler)
-
-def stop(botb, context):
-
-    context.bot.send_message(chat_id=bot.effective_chat.id, text="Please talk to me, do not stop me!")
-
-stop_handler = CommandHandler('stop', stop)
-
-dispatcher.add_handler(stop_handler)
-
-def echo(bot, context):
 
     if(bot.message.text == 'Hi'):
 
-        context.bot.send_message(chat_id=chat_id, text=f"Hi {bot.effective_chat.first_name}!")
-
-    else:
-
-        context.bot.send_message(chat_id=chat_id, text=bot.message.text)
-
-echo_handler = MessageHandler(Filters.text & (~Filters.command), echo)
-
-dispatcher.add_handler(echo_handler)
-
-dispatcher = bot.dispatcher
-
-#not needed
-
-import logging
-
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-
-                     level=logging.INFO)
-
-def start(bot, context):
-
-    context.bot.send_message(chat_id=bot.effective_chat.id, text="I'm a bot, please talk to me!")
-
-start_handler = CommandHandler('start', start)
-
-dispatcher.add_handler(start_handler)
-
-def stop(botb, context):
-
-    context.bot.sendMessage(chat_id=bot.effective_chat.id, text="Please talk to me, do not stop me!")
-
-stop_handler = CommandHandler('stop', stop)
-
-dispatcher.add_handler(stop_handler)
-
-def echo(bot, context):
-
-    if(bot.message.text == 'Hi'):
-
-        context.bot.sendMessage(chat_id=chat_id, text=f"Hi {bot.effective_chat.first_name}!")
-
-    else:
-
-        context.bot.sendMessage(chat_id=chat_id, text=bot.message.text)
-
-echo_handler = MessageHandler(Filters.text & (~Filters.command), echo)
-
-dispatcher.add_handler(echo_handler)
-
-
-        return 'ok'
+      bot.sendMessage(chat_id=chat_id, text=f"Hello {first_name}!")
+      
+      return 'ok'
 
     return 'error'
 
