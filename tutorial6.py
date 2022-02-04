@@ -49,8 +49,7 @@ def webhook():
         first_name  = update.effective_chat.first_name
         # Reply with the same message
         bot.sendMessage(chat_id=chat_id, text=f"{text} {first_name}")
-        bot.message.reply_text(JOINED.replace("REPLACEME", url), reply_markup=ReplyKeyboardMarkup(reply_keyboard))
-        return 'ok'
+       return 'ok'
     return 'error'
 
 def index():
