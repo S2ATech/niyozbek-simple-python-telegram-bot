@@ -25,7 +25,6 @@ def webhook():
         # Reply with the same message
 
         bot.sendMessage(chat_id=chat_id, text=f"{text} {first_name}")
-        bot.sendMessage(chat_id=chat_id, text=f"{text} {first_name}")
         
         dispatcher = bot.dispatcher
 
