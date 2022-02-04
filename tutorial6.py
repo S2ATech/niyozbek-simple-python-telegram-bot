@@ -46,8 +46,9 @@ dispatcher = bot.dispatcher
     if(bot.message.text == 'Hi'):
 
       bot.sendMessage(chat_id=chat_id, text=f"Hello {first_name}!")
+      dispatcher = bot.dispatcher
       
-      return 'ok'
+   return 'ok'
 
     return 'error'
 
