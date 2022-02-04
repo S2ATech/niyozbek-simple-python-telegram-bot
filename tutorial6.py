@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request
-
-from  dotenv import load_dotenv
-
 from telegram.ext import Updater, MessageHandler, Filters, CommandHandler
 
 import os
