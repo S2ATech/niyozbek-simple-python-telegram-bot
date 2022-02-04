@@ -4,7 +4,7 @@ from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update, InlineKey
 
 from bson.json_util import dumps
 
-from multicolorcaptcha import CaptchaGenerator
+
 
 
 
@@ -26,7 +26,8 @@ from telegram.ext import (
 
 )
 
-from telegram.utils import helpersimport telegram
+from telegram.utils import helpers 
+
 
 
 
